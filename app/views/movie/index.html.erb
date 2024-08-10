@@ -1,0 +1,9 @@
+<h1>Movies Repository</h1>
+<a href=<%= movie_new_path%> class="btn btn-secondary mb-3">Add new Movie</a>
+<h3 class="py-3">List of Movies</h3>
+<% @movie.each do |p| %>
+<h4>Name: <%= p.name %></h4>
+<p>Director: <%= p.director %></p>
+<p>Synopsis: <%= p.synopsis %></p>
+<% end%>
+

@@ -1,0 +1,9 @@
+<h1>Series Repository</h1>
+<a href=<%= series_new_path%> class="btn btn-secondary mb-3">Add new Serie</a>
+<h3 class="py-3">List of Series</h3>
+<% @series.each do |p| %>
+<h4>Name: <%= p.name %></h4>
+<p>Director: <%= p.director %></p>
+<p>Synopsis: <%= p.synopsis %></p>
+<% end%>
+
